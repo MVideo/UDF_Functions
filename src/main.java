@@ -16,11 +16,11 @@ import com.sap.aii.utilxi.web.cachemonitoring.util.container.Container;
  */
 public class main {
 
+    /*
+     * This function can change "fname" parametr for File Adapter. Put new value into the 1st argument and some another into the 2nd.
+     * The function changed "fname".
+     */
     public String fName_change(String value, String sth, Container container) throws StreamTransformationException {
-        /*
-         * This function can change "fname" parametr for File Adapter. Put new value into the 1st argument and some another into the 2nd.
-         * The function changed "fname".
-         */
 
         DynamicConfiguration conf = (DynamicConfiguration) container.getTransformationParameters().get(StreamTransformationConstants.DYNAMIC_CONFIGURATION);
         DynamicConfigurationKey key = DynamicConfigurationKey.create("http://sap.com/xi/XI/System/File", "FileName");
